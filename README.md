@@ -12,4 +12,6 @@ Run `install.sh` to create the venv and populate it with modules.
 
 After completing the installation, you will have relatively new Python modules installed, and the code will run on new GPUs such as the Blackwell chip used by the NVIDIA DGX Spark.
 
+I've added a couple Gemma 3 versions to `lm_styles.py`.
+
 Use `run.sh` as a headless runner script.
