@@ -1,9 +1,5 @@
-try:
-    from transformers import AutoTokenizer
-    from vllm import LLM, SamplingParams
-except ImportError as e:
-    # print("Cannot import vllm")
-    pass
+from transformers import AutoTokenizer
+from vllm import LLM, SamplingParams
 
 from lcb_runner.runner.base_runner import BaseRunner
 
@@ -23,6 +19,7 @@ class VLLMRunner(BaseRunner):
             disable_custom_all_reduce=True,
             enable_prefix_caching=args.enable_prefix_caching,
             trust_remote_code=args.trust_remote_code,
+            gpu_memory_utilization=args.gpu_memory_utilization,
         )
         self.sampling_params = SamplingParams(
             n=self.args.n,

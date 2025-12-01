@@ -118,6 +118,12 @@ def get_args():
         help="Folder name to save the custom output results (output file folder modified if None)",
     )
     parser.add_argument("--dtype", type=str, default="bfloat16", help="Dtype for vllm")
+    parser.add_argument(
+        "--gpu_memory_utilization",
+        type=float,
+        default=0.9,
+        help="GPU memory utilization for vllm (default: 0.9)",
+    )
     # Added to avoid running extra generations (it's slow for reasoning models)
     parser.add_argument(
         "--start_date",
