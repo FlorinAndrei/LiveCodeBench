@@ -1,0 +1,9 @@
+# https://github.com/LiveCodeBench/LiveCodeBench/issues/108
+#datasets==4.4.1
+datasets>=3.2.0,<4.0
+tqdm==4.67.1
+transformers==4.57.3
+vllm==0.11.2
+tokenizers==0.22.1
+safetensors==0.7.0
+pebble==5.1.3
