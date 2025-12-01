@@ -10,8 +10,6 @@ if [ $# -lt 1 ]; then
 	exit 1
 fi
 
-exit
-
 rm -rf output stdout.log stderr.log
 source .venv/bin/activate
 # https://github.com/triton-lang/triton/issues/8539
