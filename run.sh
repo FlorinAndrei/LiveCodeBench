@@ -2,10 +2,10 @@ if [ $# -lt 1 ]; then
 	echo "Usage:"
 	echo
 	echo "Run a HuggingFace model (replace model name with your choice):"
-	echo "$0 --model google/gemma-3-4b-it"
+	echo "bash $0 --model google/gemma-3-4b-it"
 	echo
 	echo "Run a local model with a HuggingFace template (replace model name and path with your choices):"
-	echo "$0 --model google/gemma-3-4b-it --local_model_path local_gemma4"
+	echo "bash $0 --model google/gemma-3-4b-it --local_model_path local_gemma4"
 	echo
 	exit 1
 fi
