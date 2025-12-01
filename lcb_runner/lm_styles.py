@@ -595,6 +595,20 @@ LanguageModelList: list[LanguageModel] = [
         datetime(2023, 1, 1),
         link="https://huggingface.co/google/gemma-2b",
     ),
+    LanguageModel(
+        "google/gemma-3-4b-it",
+        "Gemma-3-4b-Instruct",
+        LMStyle.GenericBase,
+        datetime(2023, 1, 1),
+        link="https://huggingface.co/google/gemma-3-4b-it",
+    ),
+    LanguageModel(
+        "google/gemma-3-12b-it",
+        "Gemma-3-12b-Instruct",
+        LMStyle.GenericBase,
+        datetime(2023, 1, 1),
+        link="https://huggingface.co/google/gemma-3-12b-it",
+    ),
     ## Mistral Web
     LanguageModel(
         "mistral-large-latest",
